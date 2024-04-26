@@ -1,0 +1,24 @@
+.card-header {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .btn-primary {
+    background-color: #4CAF50; /* Green */
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #45a049; /* Darker green */
+  }
+  
+  .signup-link {
+    color: #007bff;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  

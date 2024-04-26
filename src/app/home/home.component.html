@@ -1,0 +1,30 @@
+<!-- app-bar.component.html -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="#">App Bar</a>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Side bar -->
+    <div class="col-md-2 bg-light">
+      <h3>Side Bar</h3>
+    </div>
+    <!-- Main content area -->
+    <div class="col-md-10">
+      <div class="main-content">
+        <h1>Header</h1>
+        <p>Paragraph content here...</p>
+        <!-- Grid view -->
+        <div class="row">
+          <div class="col-md-3 mb-4" *ngFor="let item of items">
+            <div class="card">
+              <div class="card-body">Item {{ item }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

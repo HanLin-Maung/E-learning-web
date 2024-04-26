@@ -1,0 +1,88 @@
+<!-- <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="card">
+          <div class="card-header bg-primary text-white">
+            <h3>Login</h3>
+            <p>Welcome back!</p>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <div class="mt-3">
+              <p>Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   -->
+
+   <div class="container mt-5"> 
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="card">
+          <div class="card-header bg-primary text-white">
+            <h3>Login</h3>
+            <p>Welcome back!</p>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+              </div>
+              <button type="button" class="btn btn-primary" (click)="login()">Login</button>
+
+            </form>
+            <div class="mt-3">
+              <p>Don't have an account? <a routerLink="/signup" class="signup-link">Sign up</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center" style="padding-top: 20px;">
+            <div class="containerbox" style="margin-top:10px; padding-left: 0px;padding-right: 0px">
+                <div class="row">
+                    <div class="col-12" style="text-align: center;">
+                        <form [formGroup]="formData" (ngSubmit)="onClickSubmit(formData.value)" class="form-signin">
+                            <h2 class="form-signin-heading">Please sign in</h2>
+
+                            <label for="inputEmail" class="sr-only">Email address</label>
+                            <input type="text" id="usernaem" class="form-control" fromControlName="userName" placeholder="Username" required autofocus>
+
+                            <label for="inputPassword" class="sr-only">Password</label>
+                            <input type="password" id="inputPassword" class="form-control" fromControlName="password" placeholder="Password" required>
+
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div> -->
