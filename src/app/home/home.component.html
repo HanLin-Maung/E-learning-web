@@ -1,30 +1,221 @@
-<!-- app-bar.component.html -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container">
-    <a class="navbar-brand" href="#">App Bar</a>
+<!-- <div class="container">
+  <h1 class="heading">our services</h1>
+  <div class="box-container">
+    <div class="box">
+      <img src="image/icon-1.png" alt="">
+      <h3>HTML 5</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+      <a href="#" class="btn">read more</a>
   </div>
-</nav>
 
-<div class="container-fluid">
-  <div class="row">
-    <!-- Side bar -->
-    <div class="col-md-2 bg-light">
-      <h3>Side Bar</h3>
+  <div class="box">
+    <img src="image/icon-2.png" alt="">
+    <h3>CSS 3</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+    <a href="#" class="btn">read more</a>
+</div>
+
+<div class="box">
+    <img src="image/icon-3.png" alt="">
+    <h3>JavaScript</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+    <a href="#" class="btn">read more</a>
+</div>
+
+<div class="box">
+    <img src="image/icon-4.png" alt="">
+    <h3>SASS</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+    <a href="#" class="btn">read more</a>
+</div>
+
+<div class="box">
+    <img src="image/icon-5.png" alt="">
+    <h3>JQuery</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+    <a href="#" class="btn">read more</a>
+</div>
+
+<div class="box">
+    <img src="image/icon-6.png" alt="">
+    <h3>React.js</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+    <a href="#" class="btn">read more</a>
+</div>
+  </div>
+</div> -->
+
+<!-- Postman token youtube video url copy 
+https://youtu.be/fzNIyCSa1BA -->
+
+<div class="container">
+  <h1 class="heading">our courses</h1>
+  <div class="box-container" >
+    <div class="box" *ngFor="let category of categories; let i=index" > 
+      <img src="image/icon-1.png" alt="">
+      <h3>{{category.title}}</h3>
+      <p>{{category.description}}</p>
+      <a routerLink="#" class="btn">read more</a>
     </div>
-    <!-- Main content area -->
-    <div class="col-md-10">
-      <div class="main-content">
-        <h1>Header</h1>
-        <p>Paragraph content here...</p>
-        <!-- Grid view -->
-        <div class="row">
-          <div class="col-md-3 mb-4" *ngFor="let item of items">
-            <div class="card">
-              <div class="card-body">Item {{ item }}</div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+    <div class="box">  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_c-mB3wULLhpdFqSL2w8-2v5I1Nu-bbLoUg&usqp=CAU" alt="">
+      <h3>CSS 3</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+      <a href="#" class="btn">read more</a>
     </div>
+
+    <div class="box box-row-2">
+      <img src="image/icon-3.png" alt="">
+      <h3>JavaScript</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+      <a href="#" class="btn">read more</a>
+    </div>
+
+    <div class="box box-row-2">
+      <img src="image/icon-4.png" alt="">
+      <h3>SASS</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+      <a href="#" class="btn">read more</a>
+    </div>
+
+    <div class="box box-row-2">
+      <img src="image/icon-5.png" alt="">
+      <h3>JQuery</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+      <a href="#" class="btn">read more</a>
+    </div>
+
+    <div class="box box-row-2">
+      <img src="image/icon-6.png" alt="">
+      <h3>React.js</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+      <a href="#" class="btn">read more</a>
+    </div>
+
   </div>
 </div>
+
+
+
+<!-- <header class="header">
+  <section class="flex">
+    <a routerLink="/home" class="logo">MSI</a>
+    <form class="search-form">
+      <input
+        type="text"
+        name="search_box"
+        required
+        placeholder="Search courses..."
+        maxlength="100"
+      />
+      <button type="submit" class="search-btn">
+        <i class="fas fa-search"></i> Search
+      </button>
+    </form>
+    <div class="icons">
+      <div id="menu-btn" class="menu-btn">
+        <mat-icon>menu</mat-icon>
+      </div>
+      <div id="search-btn" class="search-btn">
+            <mat-icon>search</mat-icon>
+          </div>
+      <div id="user-btn" class="user-btn">
+        <mat-icon>person</mat-icon>
+      </div>
+      <div id="toggle-btn" class="toggle-btn">
+        <mat-icon>toggle_off</mat-icon>
+      </div>
+    </div>
+  </section>
+</header>
+
+<div class="container">
+  <div class="side-bar">
+    <div id="close-btn">
+      <mat-icon>close</mat-icon>
+    </div>
+    <nav class="navbar">
+      <a routerLink="/home">
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </a>
+      <a routerLink="/about">
+        <mat-icon>help_outline</mat-icon>
+        <span>About</span>
+      </a>
+      <a routerLink="/courses">
+        <mat-icon>school</mat-icon>
+        <span>Courses</span>
+      </a>
+      <a routerLink="/teachers">
+        <mat-icon>person</mat-icon>
+        <span>Teachers</span>
+      </a>
+      <a routerLink="/contact">
+        <mat-icon>headset</mat-icon>
+        <span>Contact Us</span>
+      </a>
+    </nav>
+  </div>
+
+  <section class="courses">
+    <h1 class="heading">Our Courses</h1>
+
+    <div class="box-container">
+      <div class="box">
+        <div class="tutor">
+          <img src="images/pic-2.jpg" alt="" />
+          <div class="info">
+            <h3>John Doe</h3>
+            <span>21-10-2022</span>
+          </div>
+        </div>
+        <div class="thumb">
+          <img src="images/thumb-1.png" alt="" />
+          <span>10 Videos</span>
+        </div>
+        <h3 class="title">Complete HTML Tutorial</h3>
+        <a routerLink="/playlist"> View Playlist </a>
+      </div>
+    </div>
+
+    <div class="more-btn">
+      <a routerLink="/courses">View all Courses</a>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  &copy; copyright @ 2024 by <span>mr. web designer</span> | all rights
+  reserved!
+</footer> -->
+
+<!-- <section class="courses">
+  <h1 class="heading">Our Courses</h1>
+
+  <div class="box-container">
+    <div class="box">
+      <div class="tutor">
+        <img src="images/pic-2.jpg" alt="" />
+        <div class="info">
+          <h3>John Doe</h3>
+          <span>21-10-2022</span>
+        </div>
+      </div>
+      <div class="thumb">
+        <img src="images/thumb-1.png" alt="" />
+        <span>10 Videos</span>
+      </div>
+      <h3 class="title">Complete HTML Tutorial</h3>
+      <a routerLink="/playlist"> View Playlist </a>
+    </div>
+  </div>
+
+  <div class="more-btn">
+    <a routerLink="/courses">View all Courses</a>
+  </div> 
+</section>
+<footer class="footer">
+  &copy; copyright @ 2024 by <span>mr. web designer</span> | all rights
+  reserved!
+</footer> -->
